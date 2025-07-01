@@ -1,0 +1,107 @@
+.about-section {
+  margin-top: 20px;
+}
+
+.section-title {
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.2;
+  letter-spacing: -0.015em;
+  padding: 0 16px 12px;
+  margin-top: 20px;
+}
+
+.about-content {
+  display: flex;
+  padding: 16px;
+  container-type: inline-size;
+}
+
+.about-profile {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.profile-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  aspect-ratio: 1;
+  background-size: cover;
+  border-radius: 50%;
+  min-height: 128px;
+  width: 128px;
+  background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBq4VjYKWoFcvyJwLilqWFOG0lHtx8OipsQnoP6iXw67MF60AFdSqdWAc7iI0YmgCZF47gvDM9YzCivBXZ3nwqrVnchsktb7rREBSY7Noi7Zggl6wKz3vIdaJQabCi7hBdegjwIgyezGm92eg_R1Ak-6yovHknQaEKKDD6DwmqVhfCdohvH8uXrZLAF9DyFK_SrLi7P4hosxfBLqWR2cSR8_AVNCfDe5TXzO2dFeedfNBl92gFMIryWz2jbB1wHtjYmuZBBTWx79D0");
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+}
+
+.profile-name {
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.2;
+  letter-spacing: -0.015em;
+}
+
+.profile-title {
+  color: #90adcb;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.profile-description {
+  color: #90adcb;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 8px;
+}
+
+.skills-container {
+  display: flex;
+  gap: 12px;
+  padding: 12px;
+  flex-wrap: wrap;
+  padding-right: 16px;
+}
+
+.skill-tag {
+  display: flex;
+  height: 32px;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 8px;
+  background-color: #223649;
+  padding: 0 16px;
+}
+
+.skill-tag p {
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+}
+
+@container (min-width: 520px) {
+  .about-profile {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .profile-info {
+    flex: 1;
+    margin-left: 16px;
+  }
+}

@@ -1,0 +1,105 @@
+.projects-section {
+  margin-top: 20px;
+}
+
+.tabs-container {
+  padding-bottom: 12px;
+}
+
+.tabs-border {
+  display: flex;
+  border-bottom: 1px solid #314d68;
+  padding: 0 16px;
+  gap: 32px;
+}
+
+.tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 3px solid transparent;
+  padding: 16px 0 13px;
+  background: none;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tab.active {
+  border-bottom-color: #0c7ff2;
+}
+
+.tab p {
+  color: #90adcb;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: normal;
+  letter-spacing: 0.015em;
+  transition: color 0.3s ease;
+}
+
+.tab.active p {
+  color: white;
+}
+
+.tab:hover:not(.active) p {
+  color: #b8d4ea;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  gap: 12px;
+  padding: 16px;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-bottom: 12px;
+}
+
+.project-image {
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  aspect-ratio: 16/9;
+  background-size: cover;
+  border-radius: 8px;
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.project-title {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.project-description {
+  color: #90adcb;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+}
+.project-link {
+  color: #58acff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.project-link:hover {
+  color: white;
+}
